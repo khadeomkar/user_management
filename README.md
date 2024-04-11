@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+User Management
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Description:
+This project is a React-based web application for managing user data. It allows users to perform CRUD (Create, Read, Update, Delete) operations on a user database. The frontend is built using React, Redux, and Redux Saga for state management and asynchronous API calls.
 
-## Available Scripts
+Features:
 
-In the project directory, you can run:
+- Display a list of users in a table format
+- Add a new user using a form
+- Edit an existing user's details using a form
+- Delete a user by clicking a delete button in the table
+- Search functionality to filter users based on criteria (e.g., name, username, email)
+- Error handling and validation on the frontend
+- Optional: Pagination, sorting of user records
 
-### `npm start`
+Installation:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository: git clone <repository_url>
+2. Navigate to the project directory: cd user-management
+3. Install dependencies: npm install
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Usage:
 
-### `npm test`
+1. Start the development server: npm start
+2. Open your web browser and navigate to http://localhost:3000 to view the application.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+API Endpoints:
 
-### `npm run build`
+- GET: https://jsonplaceholder.typicode.com/users (Retrieve all users)
+- POST: https://jsonplaceholder.typicode.com/users (Create a new user)
+- PATCH: https://jsonplaceholder.typicode.com/users/:id (Update an existing user)
+- DELETE: https://jsonplaceholder.typicode.com/users/:id (Delete a user)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Note: The provided API endpoints are for testing purposes only and do not persist changes.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Folder Structure:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- /src: Contains the source code of the frontend application.
+  - /actions: Redux action creators.
+  - /components: React components.
+  - /constants: Action type constants and API endpoints.
+  - /reducers: Redux reducers.
+  - /sagas: Redux Saga middleware.
+  - /services: API service functions.
+  - /styles: CSS stylesheets.
+  - /utils: Utility functions.
+  - App.js: Root component of the application.
+  - index.js: Entry point of the application.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Author:
+Omkar Khade
